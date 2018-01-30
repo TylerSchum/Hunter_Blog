@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Oswald" rel="stylesheet">
+  <title>Document</title>
+  <style>
+
+    body {
+      font-family: 'Inconsolata', monospace;
+      margin: 0 auto;
+      padding: 0 50px;
+      max-width: 960px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      animation: fadeIn 1.8s linear forwards;
+      height: 150px;
+    }
+
+    ul {
+      padding-top: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 80%;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    a {
+      text-decoration: none;
+      transform-origin: center;
+      transition: all .1s linear;
+      font-size: 22px;
+    }
+
+    a:visited {
+      color: #00f;
+    }
+
+    a:hover {
+      color: rgb(141, 129, 255);
+      transform: scale(1.2);
+    }
+
+    a:active, a:focus {
+      color: rgb(1, 1, 141);
+    }
+
+    @media (max-width: 760px) {
+      body {
+        padding: 0;
+      }
+
+      ul {
+        flex-direction: column;
+        width: 100%;
+      }
+      a:hover {
+        transform: scale(1);
+      }
+    }
+
+    h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 28px;
+      opacity: 0; 
+      transform: rotate(0) scale(.1);
+      animation: spin .9s linear forwards;
+      display: inline-block;
+    }
+
+    p {
+      text-indent: 50px;
+      margin: 0 auto;
+      font-size: 18px;
+      opacity: 0;
+    }
+
+    p:first-of-type {
+      animation: fadeIn .3s linear forwards;
+      transform: translate(300px, -200px);
+    }
+    p:nth-of-type(2) {
+      animation: fadeIn .3s linear .3s forwards;
+      transform: translate(300px, 200px)
+    }
+    p:last-of-type {
+      animation: fadeIn .3s linear .6s forwards;
+      transform: translate(-300px, 200px);
+    }
+
+    @keyframes spin {
+      100% {
+        transform: rotate(1080deg) scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    @keyframes fadeIn {
+
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    @keyframes fadeIn {
+
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <a href="#">
+        <li>Home</li>
+      </a>
+      <a href="#">
+        <li>Blog</li>
+      </a>
+      <a href="#">
+        <li>Work</li>
+      </a>
+      <a href="#">
+        <li>Contact</li>
+      </a>
+    </ul>
+  </nav>
+  <main>
+    <h2>Tyler Schum</h2>
+    <h3>Why did you choose Web Development?</h3>
+    <p>I've spent most of my life working in a mechanic shop. this was not the job I wanted to be doing in five years, not even the next day. I longed to do something where I would be happy and proud of the work I've done. I needed a change in my life.</p>
+    <p>I decided to pursue a career where I could turn my hobby into a career. Web Development, and programming in general, was always a little hobby to me. I love both the problem solving side and the design side. It's truly a pleasure to get something working after completely analyzing the potential paths to completion.</p>
+    <p>I've never felt such motivation as I have since I've made this choice. I've gone from using some of my free time to code, to using all of my time. I study at any oppurtunity, not to keep up, but to satisfy my desire to know everything I can about this incredibly vast field. This field is incredible and provides so many oppurtunities in such a wide array of careers, I'm finally excited about my future.</p>
+  </main>
+</body>
+</html>
